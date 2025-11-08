@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Owl House</title>
+    <!--Enlace a Font Awesome para insertar iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--Enlace al CSS para el estilo-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navegacion-->
+    <nav>
+        <div class="logo">
+            <span>The Owl House</span>
+        </div>
+        <div class="nav-links" id="menu">
+            <a href="#home">Inicio</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#contact">Contactanos</a>
+        </div>
+    </nav>
+
+    <!--Hero Section (Seccion Principal)-->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Bienvenidos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates at facilis nihil dolorem facere, iusto neque magnam nesciunt hic dicta eum aliquam officia quibusdam doloremque nemo assumenda praesentium nobis. Nihil.</p>
+            <span class="hide" id="hideText">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae natus similique totam, cupiditate deserunt facere obcaecati optio neque ullam cumque? Itaque hic, corporis aperiam reiciendis iste rerum quam illum odio!</p>
+            </span>
+            <a href="#readmore" id="hideText_btn" class="read-btn">Leer Mas</a>
+        </div>
+        <div class="img-1-container">
+        <img src="/assets/The_Owl_House_29_wallpaper.png" alt="the-owl-house" width="300px" class="img-1">
+        </div>
+    </section>
+
+    <!--Section Personajes-->
+    <section class="personajes" id="personajes">
+        <h2 class="section-title">Personajes</h2>
+        <div class="personajes-grid">
+            <div class="p-card">
+                <img src="./assets/071d167e0403412199a0308cd5dc0b2a.jpg" alt="Eda" height="200px" class="personajes-img">
+                <div class="personajes-info">
+                    <h3 class="personajes-title">Eda</h3>
+                    <p class="personajes-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto perferendis numquam magnam perspiciatis nesciunt!</p>
+                </div>
+            </div>
+
+             <div class="p-card">
+                <img src="./assets/The_Owl_House_9.webp" alt="amity" height="200px" class="personajes-img">
+                <div class="personajes-info">
+                    <h3 class="personajes-title">Amity</h3>
+                    <p class="personajes-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto perferendis numquam magnam perspiciatis nesciunt!</p>
+                </div>
+            </div>
+
+             <div class="p-card">
+                <img src="./assets/Lilith_and_ice_sculpture_S2_EP02.webp" alt="lilith" height="200px" class="personajes-img">
+                <div class="personajes-info">
+                    <h3 class="personajes-title">Lilith</h3>
+                    <p class="personajes-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto perferendis numquam magnam perspiciatis nesciunt!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Section Contact-->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contactanos</h2>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" id="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" class="form-textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link" ><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" ><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" ><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p class="created">✨ 2025 Hambart_14.</p>
+    </footer>
+    
+
+    <!--Link para el archivo JavaScript-->
+    <script src="index.js"></script>
+</body>
+</html>
