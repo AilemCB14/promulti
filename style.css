@@ -236,7 +236,7 @@ section[id]{
     position: relative;
 }
 
-.contact-form{
+#contact-form{
     max-width: 600px;
     margin: 0 auto;
     display: grid;
@@ -268,7 +268,7 @@ section[id]{
     resize: vertical;
 }
 
-.submit-btn{
+#enviar{
     background: linear-gradient(90deg, var(--color-1), var(--color-3));
     color: white;
     border: none;
