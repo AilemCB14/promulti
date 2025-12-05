@@ -15,10 +15,11 @@
         <div class="logo">
             <span>The Owl House</span>
         </div>
-        <div class="nav-links" id="menu">
+        <div class="nav-links posicion-inicial" id="menu">
             <a href="#home">Inicio</a>
             <a href="#personajes">Personajes</a>
-            <a href="#contact">Contactanos</a>
+            <a href="#opening">Opening</a>
+            <a href="#contact">Contactanos</a>   
         </div>
     </nav>
 
@@ -38,7 +39,7 @@
     </section>
 
     <!--Section Personajes-->
-    <section class="personajes" id="personajes">
+    <section class="personajes oculto-inicial" id="personajes">
         <h2 class="section-title">Personajes</h2>
         <div class="personajes-grid">
             <div class="p-card">
@@ -68,27 +69,45 @@
         </div>
     </section>
 
+    <!--Section opening-->
+    <section class="opening" id="opening">
+        <h2 class="section-title">Opening</h2>
+        <video id="rvideo">
+            <source src="/assets/the_owl_house.mp4" type="video/mp4">
+        </video>
+        <div class="botones">
+            <button onclick="playPause()">&#9658;/||</button>
+            <button onclick="stop()">&#9726;</button>
+            <button onclick="skip(-10)">&lt;&lt;</button>
+            <button onclick="skip(10)">&gt;&gt;</button>
+            <button onclick="setVolume(0.1)">Vol +</button>
+            <button onclick="setVolume(-0.1)">Vol -</button>
+            <button onclick="toggleFullscreen()">⛶</button>
+        </div>
+    </section>
+
     <!--Section Contact-->
     <section class="contact" id="contact">
         <h2 class="section-title">Contactanos</h2>
 
-        <form class="contact-form">
+        <form id="contact-form" action="#">
             <div class="form-group">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" class="form-input" required>
+                <input type="text" id="name" class="form-input" maxlength="50" oninput="validar('name')" required pattern="([a-zA-Z\s]{3,50})">
             </div>
 
             <div class="form-group">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" id="email" class="form-input" required>
+                <input type="email" id="email" class="form-input" maxlength="50" oninput="validar('email')" required>
             </div>
 
             <div class="form-group">
                 <label for="message" class="form-label">Mensaje</label>
-                <textarea id="message" class="form-textarea" required></textarea>
+                <textarea id="message" class="form-textarea" maxlength="500" oninput="validar('message')" required></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            <input type="submit" id="enviar" value="Aceptar" onclick="enviarValidar(event)">
+            
         </form>
 
     </section>
@@ -102,8 +121,13 @@
         <p class="created">✨ 2025 Hambart_14.</p>
     </footer>
     
+     <div class="notification-banner oculto" id="welcomeBanner">
+        <span>👋 ¡Bienvenido/a a la Casa Búho! Disfruta la magia.</span>
+    </div>
 
-    <!--Link para el archivo JavaScript-->
+    <!--Link para los archivos JavaScript-->
     <script src="index.js"></script>
+    <script src="form.js" ></script>
+    <script src="video.js"></script>
 </body>
 </html>
